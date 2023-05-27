@@ -186,7 +186,10 @@ export const EditVacancyPage = () => {
         {
             salariesStatus == 'searching' || 
             categoriesStatus == 'searching' || 
-            statusesStatus == 'searching' ?
+            statusesStatus == 'searching' || 
+            salaries == null || 
+            statuses == null || 
+            vacancyDetails == null ?
                 <Checking/>
             :
                 <Grid

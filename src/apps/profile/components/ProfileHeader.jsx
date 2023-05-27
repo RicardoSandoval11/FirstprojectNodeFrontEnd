@@ -27,10 +27,9 @@ export const ProfileHeader = ({user}) => {
             <Box
                 component="img"
                 sx={{
-                    width: '50%',
+                    width: 'auto',
+                    height: {xs: '100px', md: '200px'},
                     borderRadius: '100%',
-                    maxHeight: { xs: 233, md: 167 },
-                    maxWidth: { xs: 350, md: 250 },
                     marginX: 'auto',
                     marginY: {xs: 2, md: 0}
                 }}

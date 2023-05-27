@@ -17,9 +17,10 @@ export const VacancyDetailsPage = () => {
 
     const { vacancyId } = useParams();
 
-    const { startLoadingVacancyDetails } = useVacancyStore();
+    const { startLoadingVacancyDetails, startClearingVacancyDetails } = useVacancyStore();
 
     useEffect(() => {
+        startClearingVacancyDetails();
         startLoadingVacancyDetails(vacancyId);
     },[]);
 

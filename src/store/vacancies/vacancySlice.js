@@ -92,6 +92,12 @@ export const vacancySlice = createSlice({
             state.allVacancies=payload.vacancies;
             state.totalPages = payload.totalPages;
             state.status = 'completed';
+        },
+        onClearVacancyDetails: ( state ) => {
+            state.vacancyDetails = null;
+        },
+        onClearVacanciesByCategory: ( state ) => {
+            state.vacanciesByCategory = null;
         }
     }
 });
@@ -113,5 +119,7 @@ export const {
     onLoadMostRecentVacancies,
     onLoadvacanciesByCategory,
     onLoadVacanciesByCategoryFailed,
-    onLoadAllVacancies
+    onLoadAllVacancies,
+    onClearVacancyDetails,
+    onClearVacanciesByCategory
 } = vacancySlice.actions;

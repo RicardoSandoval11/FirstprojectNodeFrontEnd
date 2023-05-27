@@ -17,7 +17,9 @@ import {
         onLoadMostRecentVacancies,
         onLoadvacanciesByCategory,
         onLoadVacanciesByCategoryFailed,
-        onLoadAllVacancies } from '../store/vacancies/vacancySlice';
+        onLoadAllVacancies,
+        onClearVacancyDetails,
+        onClearVacanciesByCategory } from '../store/vacancies/vacancySlice';
 
 
 export const useVacancyStore = () => {
@@ -172,6 +174,14 @@ export const useVacancyStore = () => {
         }
     }
 
+    const startClearingVacancyDetails = () => {
+        dispatch(onClearVacancyDetails());
+    }
+
+    const startClearingvacanciesByCategory = () => {
+        dispatch(onClearVacanciesByCategory());
+    }
+
     return {
         startCreatingNewVacancy,
         startClearingMessages,
@@ -183,6 +193,8 @@ export const useVacancyStore = () => {
         startLoadingVacanciesOfPopularCategories,
         startLoadingMostRecentVacancies,
         startloadingVacanciesByCategory,
-        startLoadingAllVacancies
+        startLoadingAllVacancies,
+        startClearingVacancyDetails,
+        startClearingvacanciesByCategory
     }
 }

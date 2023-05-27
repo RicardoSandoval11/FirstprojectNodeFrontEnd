@@ -14,11 +14,12 @@ export const VacanciesByCategory = () => {
 
     const { categoryId } = useParams();
 
-    const { startloadingVacanciesByCategory, startClearingMessages } = useVacancyStore();
+    const { startloadingVacanciesByCategory, startClearingMessages, startClearingvacanciesByCategory } = useVacancyStore();
 
     const [page, setPage] = useState(0);
 
     useEffect(() => {
+        startClearingvacanciesByCategory();
         startloadingVacanciesByCategory(categoryId, page);
     },[page]);
 

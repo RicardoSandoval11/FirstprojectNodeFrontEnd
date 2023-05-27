@@ -90,6 +90,7 @@ export const VacancyDetailsPage = () => {
                             flexDirection: 'column',
                             textAlign:'start',
                             width: {xs: '100%', md:'50%'},
+                            maxWidth: 670,
                             padding: 3
                         }}
                     >

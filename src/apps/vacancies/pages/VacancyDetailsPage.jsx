@@ -71,9 +71,8 @@ export const VacancyDetailsPage = () => {
                             <Box
                             component="img"
                             sx={{
-                            width: 'auto',
-                            height: '100%',
-                            maxHeight: 300,
+                            width: '100%',
+                            height: 'auto',
                             borderRadius: '10px'
                             }}
                             alt={vacancyDetails.title}

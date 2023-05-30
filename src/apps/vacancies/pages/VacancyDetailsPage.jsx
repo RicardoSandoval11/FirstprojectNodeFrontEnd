@@ -65,6 +65,7 @@ export const VacancyDetailsPage = () => {
                                 m:2, 
                                 display:'flex', 
                                 justifyContent: 'center',
+                                flexDirection: 'column',
                                 width: '100%' 
                             }}
                         >

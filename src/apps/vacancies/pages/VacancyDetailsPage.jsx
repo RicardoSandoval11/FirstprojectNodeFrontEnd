@@ -72,6 +72,8 @@ export const VacancyDetailsPage = () => {
                             component="img"
                             sx={{
                             width: '100%',
+                            maxWidth: 300,
+                            marginX: 'auto',
                             height: 'auto',
                             borderRadius: '10px'
                             }}
